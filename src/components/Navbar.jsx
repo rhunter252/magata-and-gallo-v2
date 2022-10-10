@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import * as React from "react";
 import { Link } from "react-router-dom";
 import {
   AppBar,
@@ -7,12 +7,14 @@ import {
   Box,
   Button,
   Menu,
+  Stack,
   MenuItem,
   Container,
   Typography,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../assets/Asset 4@3x.png";
+import "./Navbar.css";
 
 const pages = ["Home", "Shop", "About", "Contact"];
 
@@ -40,7 +42,7 @@ function Navbar() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon sx={{ display: { xs: "flex", md: "flex" }, mr: 1 }} />
+              <MenuIcon />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -62,13 +64,12 @@ function Navbar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center" textDecoration="none">
-                    {<Link to={page}>{page}</Link>}
-                  </Typography>
+                  <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
+
           <Box
             sx={{
               mr: 2,
@@ -77,7 +78,7 @@ function Navbar() {
             }}
           >
             <a href="/">
-              <img src={Logo} alt="Logo" width="250" />
+              <img className="logo" src={Logo} alt="Logo" />
             </a>
           </Box>
           <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
@@ -87,7 +88,12 @@ function Navbar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page}
+                <Link
+                  to={page}
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  {page}
+                </Link>
               </Button>
             ))}
           </Box>
