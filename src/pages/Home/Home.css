@@ -8,10 +8,6 @@
   --secondary-color: #1b1b1b;
 }
 
-section {
-  padding: 5%;
-}
-
 .frontpage {
   width: 100%;
   min-height: 100vh;
@@ -37,10 +33,12 @@ section {
   color: var(--secondary-color);
   text-align: center;
   font-family: "orgonite", sans-serif;
+  padding: 5%;
 }
 
-.cards img {
+.card__div img {
   width: 100%;
+  height: 100%;
   border-radius: 1rem;
   margin-top: 2rem;
 }
@@ -57,18 +55,12 @@ section {
   bottom: 10%;
   left: 50%;
   transform: translate(-50%, -10%);
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 @media screen and (min-width: 768px) {
-  .logo2 {
-    display: block;
-    margin: auto;
-    margin-top: 10%;
-  }
-
   .cards {
     display: flex;
-    gap: 6rem;
+    gap: 2rem;
   }
 }

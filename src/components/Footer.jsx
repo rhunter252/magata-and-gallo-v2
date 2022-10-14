@@ -9,8 +9,9 @@ function Footer() {
       style={{
         position: "static",
         backgroundColor: "black",
-        height: "8vh",
+        height: "6vh",
         color: "white",
+        marginTop: "8vh",
       }}
     >
       <ul>

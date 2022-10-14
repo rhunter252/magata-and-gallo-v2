@@ -16,7 +16,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../assets/Asset 4@3x.png";
 import "./Navbar.css";
 
-const pages = ["Home", "Shop", "About", "Contact"];
+const pages = ["", "Shop", "About", "Contact"];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -42,7 +42,7 @@ function Navbar() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon sx={{ display: { xs: "flex", md: "flex" }, mr: 1 }} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -64,12 +64,20 @@ function Navbar() {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center">
+                    <Link
+                      to={page}
+                      style={{
+                        color: "black",
+                      }}
+                    >
+                      {page}
+                    </Link>
+                  </Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-
           <Box
             sx={{
               mr: 2,
