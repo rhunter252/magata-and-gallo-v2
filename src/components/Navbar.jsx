@@ -16,7 +16,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../assets/Asset 4@3x.png";
 import "./Navbar.css";
 
-const pages = ["", "Shop", "About", "Contact"];
+const pages = ["Shop", "About", "Contact"];
 
 function Navbar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);

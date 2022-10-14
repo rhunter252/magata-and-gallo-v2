@@ -1,16 +1,16 @@
 const products = [
   {
     id: 1,
-    name: "Super Backpack",
+    name: "Pink Sapphire and Diamond Ring",
     price: 129.99,
     description:
-      "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
+      "Torem ipsum dolor sit amet, consectetur adipisicing elitsed incididunt ut labore et dolore magna",
     image:
       "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80",
   },
   {
     id: 2,
-    name: "New Hip",
+    name: "Sapphire and Diamond Ring",
     price: 199.99,
     description:
       "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
@@ -19,7 +19,7 @@ const products = [
   },
   {
     id: 3,
-    name: "Elite Series",
+    name: "gold bangle",
     price: 189.99,
     description:
       "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
@@ -28,16 +28,16 @@ const products = [
   },
   {
     id: 4,
-    name: "Casual",
+    name: "diamond halo pendant",
     price: 129.99,
     description:
       "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
     image:
-      "https://images.unsplash.com/photo-1589128777073-263566ae5e4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
+      "https://images.unsplash.com/photo-1598560917505-59a3ad559071?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80",
   },
   {
     id: 5,
-    name: "Best Tote",
+    name: "Diamond Halo earrings",
     price: 399.99,
     description:
       "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
@@ -46,12 +46,30 @@ const products = [
   },
   {
     id: 6,
-    name: "Charming Series",
-    price: 689.99,
+    name: "Chocolate Diamond earrings",
+    price: 789.99,
     description:
       "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
     image:
       "https://images.unsplash.com/photo-1629224316810-9d8805b95e76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+  },
+  {
+    id: 7,
+    name: "Diamond dangle earrings",
+    price: 959.99,
+    description:
+      "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
+    image:
+      "https://images.unsplash.com/photo-1586104130901-cb09c211fa15?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+  },
+  {
+    id: 8,
+    name: "Two Tone Watch",
+    price: 689.99,
+    description:
+      "Torem ipsum dolor sit amet, consectetur adipisicing elitsed do eiusmo tempor incididunt ut labore et dolore magna",
+    image:
+      "https://images.unsplash.com/photo-1623998021446-45cd9b269056?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1479&q=80",
   },
 ];
 export default products;
